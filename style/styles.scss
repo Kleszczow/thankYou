@@ -1,0 +1,37 @@
+$buttons: #96642c;
+$buttonsHover: #724e24;
+$textcolor: #ddd;
+$inputHover: #694b23;
+$inputFocus: #573e1e;
+$font: "Poppins", sans-serif;
+$borderLight: 2px solid black;
+$border: 3px solid black;
+$borderHeavy: 4px solid black;
+$borderRadiusLight: 5px;
+$borderRadiusMedium: 10px;
+$borderRadiusHeavy: 20px;
+$fontShadow: 0px 0px 3px rgba(66, 68, 90, 1);
+$smallShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$bigShadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin gridCenter {
+  display: grid;
+  place-content: center;
+}
+@mixin backgroundPage {
+  background-image: url(../pictures/background/1546253828.svg);
+  background-size: cover;
+  background-position: 50% 70%;
+}
+
+@import "./body";
+@import "_main.scss";
+@import "_form.scss";
+@import "_thanks.scss";
